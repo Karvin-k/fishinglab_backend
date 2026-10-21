@@ -1,0 +1,39 @@
+# ===== 环境变量：含数据库密码、微信密钥、JWT 密钥，绝不能提交 =====
+.env
+.env.*
+!.env.example
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ===== IDE =====
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== 用户上传的图片（270MB，不进仓库）=====
+app/static/uploads/
+
+# ===== 日志 =====
+*.log
+logs/
+
+# ===== 数据库备份（schema.sql 例外，那是建表脚本）=====
+*.sql
+!schema.sql
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db
+desktop.ini
